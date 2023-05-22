@@ -60,7 +60,7 @@ top 명령어는 리눅스 시스템의 사용량을 실시간으로 보여주�
 - top -d 1 : 사용량의 갱신 주기를 1초로 변경.(기본 3초)
 - top -m : 메모리 사용률을 시각화.
 
-  ![top5](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/10cb59d5-c07e-4d81-8015-8416ecaf24ae)
+![top5](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/10cb59d5-c07e-4d81-8015-8416ecaf24ae)
 
 - shift + p : CPU 사용률이 높은 프로세스를 기준으로 나열
 - shift + t : 수행시간이 긴 프로세스를 기준으로 나열
@@ -104,3 +104,37 @@ top은 그때 그때의 사용량을 보여주는 모니터링과 비슷한 개�
 
 - ps auxf : 실행중인 프로세스를 트리구조로 출력
 - ps auxfww : 실행중인 프로세스를 트리구조 + 실행중인 옵션 확인 
+
+---
+
+# [jobs]란 ?
+```
+현재 계정에서 실행중인 작업의 상태 표시하는 명령어.
+```
+
+![jobs](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/5eb3531f-ec24-4d65-a28c-00fdb5ee9d2d)
+
+```
+- jobs으로 출력되는 작업의 상태값 -
+```
+
+- Running : 작업이 계속 진행중인 상태.
+- Done : 작업이 완료되어 0을 반환한 상태.
+- Done(code) : 작업이 완료되어 0이 아닌 코드를 반환한 상태.
+- Stopped : 작업이 일시 중단된 상태.
+- Stopped(SIGTSTP) : SIGTSTP 시그널이 작업을 일시 중단한 상태.
+- Stopped(SIGSTOP) : SIGSTOP 시그널이 작업을 일시 중단한 상태.
+- Stopped(SIGTTIN) : SIGTTIN 시그널이 작업을 일시 중단한 상태.
+- Stopped(SIGTTOU) : SIGTTOU 시그널이 작업을 일시 중단한 상태.
+
+```
+- jobs으 상태 옵션 -
+```
+
+- -l : 프로세스 그룹 ID를 state필드 앞에 출력.
+- -n : 프로세스 그룹 중 대표 프로세스 ID를 출력.
+- -p : 각 프로세스 아이디에 대해 한 행씩 출력.
+- command : 지정한 명령어를 
+
+
+
