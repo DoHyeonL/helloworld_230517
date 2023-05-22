@@ -1,7 +1,7 @@
- ```
-- [top]이란 ? -
  
-   top 명령어는 리눅스 시스템이 실행이 시작된 순간부터 현재까지의 시스템 사용량을 실시간으로 보여주는 명령어입니다. 
+#  [top]이란 ? 
+ ```
+top 명령어는 리눅스 시스템의 사용량을 실시간으로 보여주는 명령어. 
  ```
  ```
  ex)실행 예시
@@ -52,6 +52,7 @@
 ```
 그리고 그 다음 문단에서는 Mem과 Swap의 각 메모리 사용량을 표시해준다.
 ```
+---
 ```c
 - top의 사용 옵션 -
 ```
@@ -69,3 +70,37 @@
 ```
 등의 옵션들이 있다.
 ```
+
+---
+
+# [ps]란 ? 
+```
+현재 실행중인 프로세스의 목록과 상태를 출력하여 보여주는 명령어.
+```
+![ps](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/6f67262b-926b-4fe1-a8d5-bbbe06d5726b)
+
+```
+top은 그때 그때의 사용량을 보여주는 모니터링과 비슷한 개념이라면 ps는 프로세스 전체 사용시간 동안의 CPU 사용량을 보여준다.
+```
+---
+```c
+- ps의 사용 옵션 -
+```
+- ps -ef : 모든 프로세스를 풀 포맷으로 출력한다.
+
+![ps -ef](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/982d9164-ed24-4694-b6ea-b028d40f81f0)
+
+- ps -ef | grep : 모든 프로세스들 중 특정 프로세스를 풀 포맷으로 출력.
+
+![ps -ef _ grep](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/895bedd6-39ff-4d94-9c19-b8bb2c071782)
+
+- ps ax : 시스템의 모든 프로세스를 BSD 포맷으로 출력
+
+![ps ax](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/62e7a12c-d545-441b-99fa-a48d358bcc8b)
+
+- ps aux : 실행중인 모든 프로세스 확인
+
+![ps aux](https://github.com/DoHyeonL/helloworld_230517/assets/125560095/dbc84d66-5421-415a-91c6-ec70f00a4f1f)
+
+- ps auxf : 실행중인 프로세스를 트리구조로 출력
+- ps auxfww : 실행중인 프로세스를 트리구조 + 실행중인 옵션 확인 
