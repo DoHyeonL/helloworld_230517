@@ -167,7 +167,7 @@ ex) kill -9 %1
 ```
 
 # 출처
-- [GitHub 프로필](https://github.com/)
+- [@DoHyoenL](https://github.com/)
 
 
 
