@@ -166,7 +166,8 @@ top은 그때 그때의 사용량을 보여주는 모니터링과 비슷한 개�
 ex) kill -9 %1
 ```
 
-
+# 출처
+- [@DoHyeonL](https://github.com/DoHyoenL)
 
 
 
